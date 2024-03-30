@@ -11,11 +11,11 @@ function pl() {
     const result = sp - cp;
 
     if(result < 0) {
-        message = "Your loss is Rs. " + Math.abs(result).toFixed(2);
+        message = "You've encountered a loss of Rs. " + Math.abs(result).toFixed(2);
     } else if(result > 0) {
-        message = "Your profit is Rs. " + result.toFixed(2);
+        message = "You've gained a profit is Rs. " + result.toFixed(2);
     } else {
-        message = "You have neither profit nor loss in this product";
+        message = "This product has resulted in neither gain nor loss.";
     }
 
     document.getElementById("pl").innerText = message;
